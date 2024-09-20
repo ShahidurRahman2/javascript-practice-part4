@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom element ar cash in and cash out</title>
+    <!-- added cdn link from daiseui or tilwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+<main class="flex justify-center">
+
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+
+            <div class="stats shadow">
+                <div class="stat">         
+                  <div id="balance-id" class="stat-value">89400</div>
+                  <div class="stat-desc">amount of money</div>
+                </div>
+              </div>
+
+              
+              <div class="divider"></div>
+            <div class="">
+              <button id="cash-in-button"  class="btn btn-primary">cashIn</button>
+              <button id="cash-out-button" class="btn btn-primary">cashOut</button>
+              <button id="transition" class="btn btn-primary">Transition</button>
+            </div>
+              <div class="divider"></div>
+
+              <div id="add" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">money</span>
+                    </label>
+                    <input id="input-cashin" type="text" placeholder="money" class="input input-bordered" autocomplete="off" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">pin</span>
+                    </label>
+                    <input id="cashin-pin" type="password" placeholder="type your pin" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="add-btn" class="btn btn-primary">add money</button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- cash out form start as of now -->
+              <div id="cashout" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">cashOut amount</span>
+                    </label>
+                    <input id="input-cashout" type="text" placeholder="money" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Password</span>
+                    </label>
+                    <input id="cashout-pin" type="password" placeholder="enter your pin" class="input input-bordered" autocomplete="off" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cash-btn" class="btn btn-primary">cash out</button>
+                  </div>
+                </form>
+              </div>
+
+              <div id="transition-id" >
+                <div id="transition-container">
+                  <p>iueiouweoiuweoi</p>
+                </div>
+               </div>
+          
+          </div>
+        </div>
+      </div>
+</main>
+<script src="home.js"></script>
+<script src="feature.js"></script>
+<script src="utilitis.js"></script>
+
+</body>
+</html>
